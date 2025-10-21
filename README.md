@@ -1,6 +1,6 @@
 # DemoQA BDD Test Automation
 
-Automated browser tests for DemoQA using Behave (Cucumber-style BDD), Selenium WebDriver, and Faker-generated data. The test suite covers the Practice Form, Browser Windows, and Web Tables workflows.
+End-to-end browser automation suite for the DemoQA playground, built with Behave (Cucumber-style BDD), Selenium WebDriver, and Faker-driven data generation. It demonstrates modern UI testing practices—including form submissions, multi-window handling, dynamic tables, and time-based widgets—using readable scenarios and maintainable step definitions.
 
 ## Requirements
 
@@ -13,8 +13,8 @@ Automated browser tests for DemoQA using Behave (Cucumber-style BDD), Selenium W
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/<your-org>/<your-repo>.git
-   cd <your-repo>
+   git clone git@github.com:insanidade/acc_part2.git
+   cd acc_part2
    ```
 
 2. **Create (optional) and activate a virtual environment**
@@ -44,6 +44,13 @@ Automated browser tests for DemoQA using Behave (Cucumber-style BDD), Selenium W
   ```bash
   behave features/practice_form.feature
   ```
+
+## Test Coverage
+
+- `features/practice_form.feature` – fills out DemoQA Practice Form with Faker data, uploads a file, asserts modal popup handling.
+- `features/browser_windows.feature` – exercises multiple window handling by opening, validating, and closing a new browser window.
+- `features/web_tables.feature` – creates, edits, and deletes table entries, including bulk creation of 12 records and cleanup verification.
+- `features/progress_bar.feature` – manages the dynamic progress bar by pausing below 25%, waiting for completion, and validating reset behavior.
 
 WebDriver binaries are managed automatically by `webdriver-manager`. Ensure Chrome is installed and up to date—the matching ChromeDriver will be downloaded into your user cache on the first run.
 
