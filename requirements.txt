@@ -1,0 +1,6 @@
+behave
+selenium
+webdriver-manager
+assertpy
+Faker
+
