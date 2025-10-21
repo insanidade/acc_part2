@@ -7,5 +7,7 @@ Feature: Web Tables CRUD Operations
     And I add a new record to the table with random data
     And I edit the first name of the newly created record
     And I delete the newly created record
+    And I create 12 new records dynamically using random data
+    And I delete all newly created records
     Then the record should no longer be present in the table
 
