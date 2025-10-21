@@ -51,6 +51,7 @@ End-to-end browser automation suite for the DemoQA playground, built with Behave
 - `features/browser_windows.feature` – exercises multiple window handling by opening, validating, and closing a new browser window.
 - `features/web_tables.feature` – creates, edits, and deletes table entries, including bulk creation of 12 records and cleanup verification.
 - `features/progress_bar.feature` – manages the dynamic progress bar by pausing below 25%, waiting for completion, and validating reset behavior.
+- `features/sortable.feature` – reorders the DemoQA sortable list into alphabetical ascending order via drag-and-drop.
 
 WebDriver binaries are managed automatically by `webdriver-manager`. Ensure Chrome is installed and up to date—the matching ChromeDriver will be downloaded into your user cache on the first run.
 
